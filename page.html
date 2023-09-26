@@ -1,0 +1,32 @@
+<!--bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- ここからHTMLを記述してください。 -->
+<div class="vh-100 d-flex align-items-center bg-dark justify-content-center m-auto">
+    <div class="d-flex align-itmes-center">
+        <div class="bg-white col-12 text-center px-4 py-2" id="initial-page">
+            <div class="pt-2 text-center">
+                <h3>Clicker Empire Game</h3>
+            </div>
+            <form id="game-form" class="form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <input id="name" type="text" name="userName" placeholder="Your name" class="form-control" required>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="col-6 pl-0" >
+                        <button class="btn btn-primary col-12" id="new">New</button>
+                    </div>
+                    <div class="col-6 pr-0" >
+                        <button class="btn btn-primary col-12" id="login">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="m-auto bg-blue col-12 col-md-10 p-2 d-none text-white" id="game">
+            <div class="just" id="setting">
+            </div>
+            <div id="game-page">
+            </div>
+        </div>
+    </div>
+</div>
